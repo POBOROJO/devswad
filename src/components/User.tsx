@@ -17,7 +17,7 @@ const User = async () => {
     <DropdownMenu>
       <DropdownMenuTrigger>
         <div className="flex items-center gap-2 cursor-pointer">
-          Hey, {user.email}
+          Hey, {user && user.email}
           <ChevronDown />
         </div>
       </DropdownMenuTrigger>

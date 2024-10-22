@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { Card, CardDescription, CardFooter } from "@/components/ui/card";
+import { Card, CardDescription } from "@/components/ui/card";
 import {
   Select,
   SelectContent,
@@ -28,7 +28,7 @@ export default function CreateRequest() {
               {orders.length > 0 ? (
                 <SelectGroup>
                   {orders.map((order) => (
-                    <SelectItem value={order.id}>{order.id}</SelectItem>
+                    <SelectItem key={order.id} value={order.id}>{order.id}</SelectItem>
                   ))}
                 </SelectGroup>
               ) : (
